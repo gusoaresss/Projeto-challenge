@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 a {
@@ -30,8 +31,21 @@ nav {
 
 main {
   background: url("bg.png") no-repeat center center;
-  background-size: cover;
+  background-size: 100%;
   height: 92vh;
+  text-align: center;
+  padding: 70px;
+  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+  color: #23232e;
+}
+
+main p{
+  padding: 40px;
+  color: black;
+}
+
+main img{
+  width: 250px;
 }
 
 .nav-list {
@@ -60,6 +74,10 @@ main {
 @media (max-width: 999px) {
   body {
     overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
   }
   .nav-list {
     position: absolute;
